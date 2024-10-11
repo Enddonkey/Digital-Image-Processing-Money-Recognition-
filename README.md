@@ -172,7 +172,7 @@ Remove small objects from binary image
 BW2 = bwareaopen(BW1, 100);% delete the noise from the enviroment 
 ```
 
-![image-20241011001034821](C:\Users\End_donkey\AppData\Roaming\Typora\typora-user-images\image-20241011001034821.png)
+![image-20241011001034821](https://enddonkey.oss-cn-beijing.aliyuncs.com/blog/202410120253238.png)
 
 #### [imfill]([imfill - Fill image regions and holes - MATLAB - MathWorks China](https://ww2.mathworks.cn/help/images/ref/imfill.html?searchHighlight=imfill&s_tid=srchtitle_support_results_1_imfill))
 
@@ -186,7 +186,7 @@ Fill image regions and holes
 BW3 = imfill(BW2, 'holes');% fill the hole in the closed region
 ```
 
-![image-20241011201751072](C:\Users\End_donkey\AppData\Roaming\Typora\typora-user-images\image-20241011201751072.png)
+![image-20241011201751072](https://enddonkey.oss-cn-beijing.aliyuncs.com/blog/202410120253642.png)
 
 #### [bwlabel]([bwlabel - Label connected components in 2-D binary image - MATLAB - MathWorks China](https://ww2.mathworks.cn/help/images/ref/bwlabel.html?searchHighlight=bwlabel&s_tid=srchtitle_support_results_1_bwlabel))
 
@@ -211,7 +211,7 @@ stats = regionprops(L, 'Area', 'PixelIdxList', 'BoundingBox', 'Orientation', 'Ce
 stats
 ```
 
-![image-20241011205328450](C:\Users\End_donkey\AppData\Roaming\Typora\typora-user-images\image-20241011205328450.png)
+![image-20241011205328450](https://enddonkey.oss-cn-beijing.aliyuncs.com/blog/202410120254118.png)
 
 #### [sort]([sort - Sort array elements - MATLAB - MathWorks China](https://ww2.mathworks.cn/help/matlab/ref/double.sort.html?searchHighlight=sort&s_tid=srchtitle_support_results_1_sort))
 
@@ -227,7 +227,7 @@ Sort array elements
 [~, index] = sort([stats.Area], 'descend');
 ```
 
-![image-20241011205846754](C:\Users\End_donkey\AppData\Roaming\Typora\typora-user-images\image-20241011205846754.png)
+![image-20241011205846754](https://enddonkey.oss-cn-beijing.aliyuncs.com/blog/202410120254898.png)
 
 ```matlab
 numRegions = min(3, length(stats));
@@ -311,7 +311,7 @@ rotatedRegion = imrotate(currentRegion, -angle, 'bilinear', 'crop');
 rotatedImg = imrotate(img, -angle, 'bilinear', 'crop');
 ```
 
-![image-20241011222033194](C:\Users\End_donkey\AppData\Roaming\Typora\typora-user-images\image-20241011222033194.png)
+![image-20241011222033194](https://enddonkey.oss-cn-beijing.aliyuncs.com/blog/202410120254656.png)
 
 ------
 
@@ -356,9 +356,9 @@ If `A` has more than two dimensions, then `imresize` only resizes the first two 
 resizedImg = imresize(croppedImg, size(template_gray));
 ```
 
-![image-20241012002643890](C:\Users\End_donkey\AppData\Roaming\Typora\typora-user-images\image-20241012002643890.png)
+![image-20241012002643890](https://enddonkey.oss-cn-beijing.aliyuncs.com/blog/202410120254254.png)
 
-![](C:\Users\End_donkey\AppData\Roaming\Typora\typora-user-images\image-20241012002523987.png)
+![](https://enddonkey.oss-cn-beijing.aliyuncs.com/blog/202410120255024.png)
 
 #### [imcrop]([imcrop - Crop image - MATLAB - MathWorks China](https://ww2.mathworks.cn/help/images/ref/imcrop.html?searchHighlight=imcrop&s_tid=srchtitle_support_results_1_imcrop))
 
@@ -374,7 +374,7 @@ The actual size of the output image does not always correspond exactly with the 
 template_regions{i} = imcrop(template_gray, bbox);
 ```
 
-![image-20241012010126143](C:\Users\End_donkey\AppData\Roaming\Typora\typora-user-images\image-20241012010126143.png)
+![image-20241012010126143](https://enddonkey.oss-cn-beijing.aliyuncs.com/blog/202410120255417.png)
 
 ------
 
@@ -384,7 +384,7 @@ template_regions{i} = imcrop(template_gray, bbox);
 
 The correlation was calculated using the ‘corr2’ method in MATLAB, which calculates the correlation between pixel matrices based on the following equation 
 
-![img](file:///C:/Users/END_DO~1/AppData/Local/Temp/msohtmlclip1/01/clip_image002.png)
+![img](https://enddonkey.oss-cn-beijing.aliyuncs.com/blog/202410120257605.png)
 
 ```matlab
 figure;
