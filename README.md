@@ -16,11 +16,11 @@ In this project, a template matching method based on correlation comparison was 
 4. **Scale Correction**
 5. **Correlation Comparison** 
 
-![aud-notes](E:\课程\dip\project1\aud-notes.jpg)
+![aud-notes](https://enddonkey.oss-cn-beijing.aliyuncs.com/blog/aud-notes.jpg)
 
 <center>Figure 1: Ideal Template Image<center>
 
-![search_noise](E:\课程\dip\project1\search_noise.png)
+![search_noise](https://enddonkey.oss-cn-beijing.aliyuncs.com/blog/search_noise.png)
 
 <center>Figure 2: Test Images <center>
 
@@ -81,7 +81,7 @@ img1 = rgb2gray(img); % change the image from rgb to gray
 figure(1); imshow(img1); title('gray image');
 ```
 
-![image-20241010212614177](C:\Users\End_donkey\AppData\Roaming\Typora\typora-user-images\image-20241010212614177.png)
+![image-20241010212614177](https://enddonkey.oss-cn-beijing.aliyuncs.com/blog/image-20241010212614177.png)
 
 #### [medfilt2]([medfilt2 - 二维中位数滤波 - MATLAB - MathWorks 中国](https://ww2.mathworks.cn/help/images/ref/medfilt2.html?searchHighlight=medfilt2&s_tid=srchtitle_support_results_1_medfilt2))
 
@@ -96,7 +96,7 @@ grayimg = medfilt2(img1, [5,5]); % Processing of images using median filtering
 figure(2); imshow(grayimg); title('The denoised image');% show figure
 ```
 
-![image-20241010213558639](C:\Users\End_donkey\AppData\Roaming\Typora\typora-user-images\image-20241010213558639.png)
+![image-20241010213558639](https://enddonkey.oss-cn-beijing.aliyuncs.com/blog/image-20241010213558639.png)
 
 ------
 
@@ -144,7 +144,7 @@ BW = edge(grayimg, 'canny'); %Find edges using the Canny method.
 figure(3); imshow(BW); title('Canny edge detect result');
 ```
 
-![image-20241010215516139](C:\Users\End_donkey\AppData\Roaming\Typora\typora-user-images\image-20241010215516139.png)
+![image-20241010215516139](https://enddonkey.oss-cn-beijing.aliyuncs.com/blog/image-20241010215516139.png)
 
 #### [imclose]([imclose - Morphologically close image - MATLAB - MathWorks China](https://ww2.mathworks.cn/help/images/ref/imclose.html?searchHighlight=imclose&s_tid=srchtitle_support_results_1_imclose))
 
@@ -158,7 +158,7 @@ Morphologically close image
 BW1 = imclose(BW, strel('disk', 25)); %closed the region
 ```
 
-![image-20241010215909564](C:\Users\End_donkey\AppData\Roaming\Typora\typora-user-images\image-20241010215909564.png)
+![image-20241010215909564](https://enddonkey.oss-cn-beijing.aliyuncs.com/blog/image-20241010215909564.png)
 
 #### [bwareaopen]([bwareaopen - Remove small objects from binary image - MATLAB - MathWorks China](https://ww2.mathworks.cn/help/images/ref/bwareaopen.html?s_tid=doc_ta))
 
