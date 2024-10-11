@@ -20,7 +20,7 @@ In this project, a template matching method based on correlation comparison was 
 
 <center>Figure 1: Ideal Template Image<center>
 
-![search_noise](https://enddonkey.oss-cn-beijing.aliyuncs.com/blog/search_noise.png)
+![search_noise](https://enddonkey.oss-cn-beijing.aliyuncs.com/blog/202410120252346.png)
 
 <center>Figure 2: Test Images <center>
 
