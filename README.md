@@ -16,7 +16,7 @@ In this project, a template matching method based on correlation comparison was 
 4. **Scale Correction**
 5. **Correlation Comparison** 
 
-![aud-notes]([https://enddonkey.oss-cn-beijing.aliyuncs.com/blog/aud-notes.jpg](https://enddonkey.oss-cn-beijing.aliyuncs.com/blog/aud-notes.jpg))
+![aud-notes](https://enddonkey.oss-cn-beijing.aliyuncs.com/blog/202410120249338.jpg)
 
 <center>Figure 1: Ideal Template Image<center>
 
